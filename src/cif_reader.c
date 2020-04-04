@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 
-#define LEXEME_COUNT 26 // Number of members in cifLexemes minus 1
+#define LEXEME_COUNT 26 // Number of members in cifLexemes
 #define CIF_RESULT_FILENAME "cif_result.txt"
 
 
@@ -70,7 +70,7 @@ void read_cif_file(char * cifFileName)
 
 	if (cifFile)
 	{
-		for (int i = 0; i < LEXEME_COUNT - 1; i++)
+		for (int i = 0; i < LEXEME_COUNT; i++)
 		{
 			lexValue = "";
 
